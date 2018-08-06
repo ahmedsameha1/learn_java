@@ -6,7 +6,7 @@ import java.util.Arrays; // Copied from: https://docs.oracle.com/javase/7/docs/a
 public class LearnOptional {
     public static void main(String[] args) {
         var obj = new LearnOptional();
-        var optionalResult = obj.sumOver100(1, 3, 6, 111);
+        var optionalResult = obj.sumOver100(4, 3, 6, 111);
         if ( optionalResult.isPresent()) {
             System.out.println("The result is: " + optionalResult.getAsInt());
         } else {
