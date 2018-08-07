@@ -10,6 +10,8 @@ public class TestLearnOptional {
     public void test() {
         LearnOptional obj = new LearnOptional();
         // Following https://stackoverflow.com/a/38958484
-        assertEquals(OptionalInt.of(126), obj.sumOver100(1, 2, 3, 100, 20));
+        assertEquals(OptionalInt.empty(), obj.sumOver100());
+        assertEquals(OptionalInt.of(105), obj.sumOver100(10, 10, 85));
+        assertEquals(OptionalInt.empty(), obj.sumOver100(11, 55));
     }
 }
