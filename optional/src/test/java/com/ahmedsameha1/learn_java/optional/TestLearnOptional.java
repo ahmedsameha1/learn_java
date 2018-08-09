@@ -18,6 +18,8 @@ public class TestLearnOptional {
                     "bb", "cc", "dd", "ee", "ff"));
         assertEquals(Optional.empty(), obj.concatOver10("a", "b", "c"));
         assertEquals(Optional.empty(), obj.concatOver10("a", "b", null));
-        assertEquals(Optional.empty(), obj.concatOver10(null));
+        assertEquals(Optional.empty(), obj.concatOver10());
+        assertEquals("Ali", obj.getNameOrDefault("Ali"));
+        assertEquals("Hany", obj.getNameOrDefault(null));
     }
 }

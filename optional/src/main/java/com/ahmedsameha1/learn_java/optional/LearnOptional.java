@@ -38,4 +38,9 @@ public class LearnOptional {
             return Optional.empty();
         }
     }
+
+    public String getNameOrDefault(String name) {
+        // I know it's a little awkward but I need to get training on it
+        return Optional.ofNullable(name).orElse("Hany");
+    }
 }

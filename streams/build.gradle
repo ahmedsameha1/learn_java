@@ -1,0 +1,6 @@
+apply plugin: "application"
+
+dependencies {
+    // Copied from: https://mvnrepository.com/artifact/junit/junit
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
