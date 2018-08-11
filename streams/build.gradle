@@ -1,5 +1,10 @@
 apply plugin: "application"
 
+mainClassName = "com.ahmedsameha1.learn_java.streams.MyStreams";
+
+repositories {
+    jcenter()
+}
 dependencies {
     // Copied from: https://mvnrepository.com/artifact/junit/junit
     testCompile group: 'junit', name: 'junit', version: '4.12'
